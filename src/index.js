@@ -1,3 +1,4 @@
+console.log("script ran")
 const allow = document.querySelector(".allow");
 const deny = document.querySelector(".deny");
 const locations = document.querySelector("[grant-location]");
