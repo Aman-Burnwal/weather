@@ -25,7 +25,7 @@ const submitCity = document.querySelector("[submit-city]");
 
 
 const apiKey = '82da8eb92c62419ba9055952242002';
-const apiUrl = 'http://api.weatherapi.com/v1/current.json';
+const apiUrl = 'https://api.weatherapi.com/v1/current.json';
 const weatheAPI = "1e51b07a069120f3b82301f2005b6c11";
 const link = "https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}";
 
