@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Weather | Aman Burnwal</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+
+<body class="relative scroll-smooth ">
+    <div class=" p-2 relative min-h-screen h-full transition-all duration-100  bg-gradient-to-br from-[#112d4e] to-[#3f72af] bg-no-repeat">
+
+        <div class=" relative w-full max-w-[600px] mx-auto pt-10  flex flex-col  gap-10 " >
+            <!-- heading -->
+            <h2 class=" uppercase text-3xl leading-6 text-slate-100 font-bold
+              mx-auto w-fit  self-center">Weather App
+            </h2>
+            <!-- buttons -->
+            <div class="w-full flex justify-between text-white leading-4 px-6">
+                <button class="outline-none bg-slate-400 px-3 py-1 rounded" your-weather>Your Weather</button>
+                <button class="outline-none  px-3 py-1 rounded " search-weather>Search Weather</button>
+            </div>
+
+            <div id="fuctionalties">
+
+                <!-- default page -->
+
+                <div class="flex items-center flex-col gap-3 text-white" default-page>
+                    <img class="mt-7  pt-4 pb-4" src="./img/location.png" alt="" loading="lazy" width="80px" height="100px">
+                    <h2 class="text-2xl font-bold">Grant Location Access</h2>
+                    <p class="allow">Allow Access To Get Weather Information</p>
+                    <p class="deny hidden">You denied the request for Geolocation.</p>
+                    <button id="lo" class="px-6  py-1 rounded bg-[#3F72AF] outline-none" grant-location>Grant Access</button>
+                </div>
+                
+                <!-- searching page -->
+                <form class="" search-bar>
+                    <div class="relative w-full  flex justify-between gap-4  pb-10" >
+                    
+                        <input class="outline-none  rounded-xl pl-8 py-2 w-full bg-[#8096B4] text-white text-xl
+                                                    font-medium placeholder:text-white placeholder:text-xl transition-all duration-75
+                                                             focus:ring focus:ring-blue-200 caret-slate-100 " type="text"
+                            placeholder="Search for city..." input-city>
+                        <button type="submit" class="rounded-full border-none  outline-none " submit-city>
+                            <img class=" border-none text-white " src="./img/search.svg" width="40px" height="40px" alt="">
+                        </button >
+                    </div>
+                </form>
+                
+                
+                <!-- showing data -->
+                <div class="relative w-full flex flex-col items-center gap-4 pb-10   " weather-show>
+                    <div class="relative space-y-3  mx-auto items-center">
+                        <div class="fex gap-1 flex-wrap text-xl pb-3 items-center">
+                        
+                            <p class="text-3xl font-bold text-white items-center text-nowrap w-fit mx-auto overflow-hidden " city-name> </p>
+                            <img src="" alt="" loading="lazy">
+                        </div>
+                        <p class="text-xl text-white  leading-6 w-fit mx-auto" weather-conditon></p>
+                        <img class="w-fit mx-auto" src="./img/50n.png" alt="" photo loading="lazy">
+                        
+                        <p  class="text-3xl text-white text-wrap font-bold w-fit mx-auto" temprature></p>
+                    </div>
+                    
+                    <div class="  grid grid-cols-2 md:grid-cols-3  gap-4  w-full">
+                
+                        <div class="bg-slate-400 text-white rounded-md  leading-6   py-8
+                                    flex flex-col  items-center  ">
+                            <img class="" src="./img/wind.png" width="40px" height="40px" loading="lazy" alt="">
+                            <p class="uppercase text-xl font-semibold">Wind Speed</p>
+                            <p class="font-medium text-xl" wind-speed></p>
+                        </div>
+                        <div class="bg-slate-400 text-white rounded-md  leading-6   py-8
+                                    flex flex-col  items-center ">
+                            <img src="./img/humidity.png" width="40px" height="40px" loading="lazy" alt="">
+                            <p class="uppercase text-xl font-semibold">HUMIDITY</p>
+                            <p class="font-medium text-xl"  humidity></p>
+                        </div>
+                        <div class="bg-slate-400 text-white rounded-md  leading-6   py-8
+                                    flex flex-col  items-center ">
+                            <img src="./img/cloud.png" width="40px" height="40px" loading="lazy" alt="">
+                            <p class="uppercase text-xl font-semibold">clouds</p>
+                            <p class="font-medium text-xl" clouds></p>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
